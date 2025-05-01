@@ -8,18 +8,18 @@
     rel="stylesheet"
     href="static/css/element-plus.css"
   />
-  <link 
-    rel="stylesheet" 
-    href="static/css/element-plus-dark.css" 
+  <link
+    rel="stylesheet"
+    href="static/css/element-plus-dark.css"
   />
-  <link 
-    rel="stylesheet" 
-    href="./static/css/normal.css" 
+  <link
+    rel="stylesheet"
+    href="./static/css/normal.css"
   />
   <script src="./static/js/vue.global.js"></script>
   <script src="./static/js/element-plus.js"></script>
-  <link 
-    rel="stylesheet" 
+  <link
+    rel="stylesheet"
     href="./static/css/index.css"
   >
 </head>
@@ -32,9 +32,9 @@
         trigger="hover"
       >
         <template #reference>
-          <img src="./static/img/icon.jpg" 
-            alt="icon" 
-            id="my-icon" 
+          <img src="./static/img/icon.jpg"
+            alt="icon"
+            id="my-icon"
             ref="myIcon"
           >
         </template>
@@ -45,9 +45,9 @@
       </el-popover>
 
       <nav>
-        <a 
-          v-for="(item, index) in myInfos" 
-          :key="index" 
+        <a
+          v-for="(item, index) in myInfos"
+          :key="index"
            @click="handleClick(item.section)"
           class="router-title"
           :class="{ active: currentSection === item.section }"
@@ -63,7 +63,7 @@
         size="large"
         style="margin-left: 15px;"
       />
-      
+
     </div>
 
     <div class="content-container">
